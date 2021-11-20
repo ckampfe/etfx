@@ -5,7 +5,7 @@ defmodule Etfx.MixProject do
     [
       app: :etfx,
       version: "0.1.0",
-      elixir: "~> 1.13-rc",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env() == :prod || Mix.env() == :bench,
       deps: deps()
