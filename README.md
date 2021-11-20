@@ -1,5 +1,7 @@
 # etfx
 
+[![Elixir CI](https://github.com/ckampfe/etfx/actions/workflows/elixir.yml/badge.svg)](https://github.com/ckampfe/etfx/actions/workflows/elixir.yml)
+
 An Elixir userspace implementation of [Erlang External Term Format](https://www.erlang.org/doc/apps/erts/erl_ext_dist.html).
 
 I did this mainly as a teaching/learning device and a comparison with my previous [Rust implementation](https://github.com/ckampfe/etf).
