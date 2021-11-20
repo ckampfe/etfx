@@ -167,7 +167,7 @@ defmodule Etfx do
   defp decode_bignum(<<>>, bignum, _sign, _exponent), do: bignum
 
   defp decode_bignum(<<digit::8-integer, digits::binary()>>, n, sign, exponent) do
-    decode_bignum(digits, digit * 256 ** exponent + n, sign, exponent + 1)
+    decode_bignum(digits, digit * Integer.pow(256, exponent) + n, sign, exponent + 1)
   end
 
   # @spec term_to_binary(any) :: binary()
